@@ -1,35 +1,108 @@
-# Getting Started with Create React App
+# Guangxin Dai UI Garden - React Component Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive React component library built with TypeScript, Storybook, and styled-components. This library provides a collection of reusable UI components with full responsive design, accessibility features, and comprehensive testing.
 
-## Available Scripts
+## 🚀 Quick Start
 
-In the project directory, you can run:
+### Prerequisites
+- Node.js 16+ 
+- npm or yarn
+- Docker (for containerized deployment)
 
-### `npm start`
+### Installation
+```bash
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Development
+```bash
+# Start Storybook development server
+npm run storybook
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Run tests
+npm test
 
-### `npm test`
+# Build for production
+npm run build
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🐳 Docker Deployment
 
-### `npm run build`
+### Building and Running with Docker
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Build the Docker image:**
+```bash
+docker build -t dai_guangxin_coding_assignment12 .
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Run the container:**
+```bash
+docker run -d -p 8083:8083 --name dai_guangxin_coding_assignment12 dai_guangxin_coding_assignment12
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Access the application:**
+Open your browser and navigate to: `http://localhost:8083` or `http://127.0.0.1:8083`
 
-### `npm run eject`
+### Container Details
+- **Container Name:** `dai_guangxin_coding_assignment12`
+- **Working Directory:** `/guangxin_dai_ui_garden`
+- **Port:** `8083`
+- **Base Image:** `nginx:alpine`
+
+## 📦 Components
+
+This library includes all required components with comprehensive features:
+
+### 🔘 Button ✅
+- **Variants:** primary, secondary, danger
+- **Sizes:** small, medium, large
+- **States:** default, disabled
+- **Features:** Custom colors, responsive design, hover effects
+
+### 🏷️ Label ✅
+- **Variants:** default, required, optional
+- **Sizes:** small, medium, large
+- **Features:** Custom colors, font weights, accessibility support
+
+### 📝 Text ✅
+- **Elements:** p, span, div, h1-h6
+- **Sizes:** xs, sm, md, lg, xl, 2xl
+- **Features:** Text alignment, line height, truncation, responsive typography
+
+### 📊 Table ✅ (with all sub-components)
+- **Components:** Table, TableHeader, TableRow, TableCell, TableFooter
+- **Variants:** default, striped, bordered
+- **Features:** Responsive design, clickable rows, custom styling
+
+### 📋 Dropdown ✅
+- **Features:** Selectable options, disabled states, custom colors
+- **Sizes:** small, medium, large
+- **States:** Loading, error handling, keyboard navigation
+
+### ⚪ RadioButton ✅
+- **Features:** Grouped selections, custom colors, label positioning
+- **Sizes:** small, medium, large
+- **States:** Checked, disabled, hover effects
+
+### 🖼️ Img ✅
+- **Features:** Lazy loading, fallback images, object-fit options
+- **States:** Loading, error, disabled
+- **Features:** Border radius, hover effects, responsive scaling
+
+### 🌄 HeroImage ✅
+- **Features:** Background positioning, overlay effects, content alignment
+- **Customization:** Custom overlays, responsive heights, clickable areas
+
+### 🗂️ Card ✅
+- **Variants:** default, outlined, elevated, filled
+- **Features:** Hover effects, clickable states, custom padding
+- **Sizes:** small, medium, large
+
+---
+
+**Author:** Guangxin Dai  
+**Assignment:** Component Library with React and Storybook  
+**Date:** July 2025
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
